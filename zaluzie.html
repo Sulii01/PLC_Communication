@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_OBYVAK_BTN_UP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_OBYVAK_BTN_DOWN' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_OBYVAK_REZIM' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_OBYVAK_Rezerva' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_PRAC_J_BTN_UP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_PRAC_J_BTN_DOWN' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_PRAC_J_REZIM' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_PRAC_J_Rezerva' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_PRAC_Z_BTN_UP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_PRAC_Z_BTN_DOWN' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_PRAC_Z_REZIM' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_PRAC_Z_Rezerva' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_KUCHYN_BTN_UP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_KUCHYN_BTN_DOWN' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_KUCHYN_REZIM' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_KUCHYN_Rezerva' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_JIDELNA_BTN_UP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_JIDELNA_BTN_DOWN' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_JIDELNA_REZIM' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_JIDELNA_Rezerva' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_LOZNICE_BTN_UP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_LOZNICE_BTN_DOWN' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_LOZNICE_REZIM' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_LOZNICE_Rezerva' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_POKOJ_BTN_UP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_POKOJ_BTN_DOWN' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_POKOJ_REZIM' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_POKOJ_Rezerva' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_WELLNESS_BTN_UP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_WELLNESS_BTN_DOWN' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_WELLNESS_REZIM' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAL_WELLNESS_Rezerva' -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Žaluzie</title>
+    <link rel="stylesheet" href="zaluzie.css">
+    <script src="zaluzie.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Žaluzie</h1>
+        <div class="hodnoty">
+            <div class="section-obyvak">
+                <p>Obývák</p>
+            <button class="section-switch" type="submit" id="section1switch">
+                <p class="schovaný-tag" type="hidden">:="HTML_STS".ZAL_OBYVAK_AUT:</p>
+                <p class="zal_zmena_rezimu">R</p>
+            </button>
+                <form class="autoForm1" style="display: none;">
+                    <input type="hidden" name='"HTML_CO".ZAL_OBYVAK_REZIM' value="1">
+                    <input type="hidden" name='"HTML_CO".ZAL_OBYVAK_Rezerva' value="0">
+                </form>
+                <div class="tlacitka">
+                    <form class="startForm1">
+                        <input type="hidden" name='"HTML_CO".ZAL_OBYVAK_BTN_UP'  value="1">
+                        <button id="upButton1" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_OBYVAK_NAHORU:</p>
+                            <b>&#9650</b></button>
+                    </form>
+                    <form class="stopForm1">
+                        <input type="hidden" name='"HTML_CO".ZAL_OBYVAK_BTN_DOWN'  value="1">
+                        <button id="downButton1" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_OBYVAK_DOLU:</p>
+                            <b>&#9660</b></button>
+                    </form>
+                </div>
+            </div>
+            <div class="section-prac-jih">
+                <p>Pracovna jih</p>
+            <button class="section-switch" type="submit" id="section2switch">
+                <p class="schovaný-tag" type="hidden">:="HTML_STS".ZAL_PRAC_J_AUT:</p>
+                <p class="zal_zmena_rezimu">R</p>
+            </button>
+                <form class="autoForm2" style="display: none;">
+                    <input type="hidden" name='"HTML_CO".ZAL_PRAC_J_REZIM' value="1">
+                    <input type="hidden" name='"HTML_CO".ZAL_PRAC_J_Rezerva' value="0">
+                </form>
+                <div class="tlacitka">
+                    <form class="startForm2">
+                        <input type="hidden" name='"HTML_CO".ZAL_PRAC_J_BTN_UP'  value="1">
+                        <button id="upButton2" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_PRAC_J_NAHORU:</p>
+                            <b>&#9650</b>
+                        </button>
+                    </form>
+                    <form class="stopForm2">
+                        <input type="hidden" name='"HTML_CO".ZAL_PRAC_J_BTN_DOWN'  value="1">
+                        <button id="downButton2" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_PRAC_J_DOLU:</p>
+                            <b>&#9660</b>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="section-prac-zap">
+                <p>Pracovna záp.</p>
+            <button class="section-switch" type="submit" id="section3switch">
+                <p class="schovaný-tag" type="hidden">:="HTML_STS".ZAL_PRAC_Z_AUT:</p>
+                <p class="zal_zmena_rezimu">R</p>
+            </button>
+                <form class="autoForm3" style="display: none;">
+                    <input type="hidden" name='"HTML_CO".ZAL_PRAC_Z_REZIM' value="1">
+                    <input type="hidden" name='"HTML_CO".ZAL_PRAC_Z_Rezerva' value="0">
+                </form>
+                <div class="tlacitka">
+                    <form class="startForm3">
+                        <input type="hidden" name='"HTML_CO".ZAL_PRAC_Z_BTN_UP'  value="1">
+                        <button id="upButton3" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_PRAC_Z_NAHORU:</p>
+                            <b>&#9650</b></button>
+                    </form>
+                    <form class="stopForm3">
+                        <input type="hidden" name='"HTML_CO".ZAL_PRAC_Z_BTN_DOWN'  value="1">
+                        <button id="downButton3" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_PRAC_Z_DOLU:</p>
+                            <b>&#9660</b></button>
+                    </form>
+                </div>
+            </div>
+            <div class="section-kuchyn">
+                <p>Kuchyň</p>
+            <button class="section-switch" type="submit" id="section4switch">
+                <p class="schovaný-tag" type="hidden">:="HTML_STS".ZAL_KUCHYN_AUT:</p>
+                <p class="zal_zmena_rezimu">R</p>
+            </button>
+                <form class="autoForm4" style="display: none;">
+                    <input type="hidden" name='"HTML_CO".ZAL_KUCHYN_REZIM' value="1">
+                    <input type="hidden" name='"HTML_CO".ZAL_KUCHYN_Rezerva' value="0">
+                </form>
+                <div class="tlacitka">
+                    <form class="startForm4">
+                        <input type="hidden" name='"HTML_CO".ZAL_KUCHYN_BTN_UP'  value="1">
+                        <button id="upButton4" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_KUCHYN_NAHORU:</p>
+                            <b>&#9650</b></button>
+                    </form>
+                    <form class="stopForm4">
+                        <input type="hidden" name='"HTML_CO".ZAL_KUCHYN_BTN_DOWN'  value="1">
+                        <button id="downButton4" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_KUCHYN_DOLU:</p>
+                            <b>&#9660</b></button>
+                    </form>
+                </div>
+            </div>
+            <div class="section-jidelna">
+                <p>Jídelna</p>
+            <button class="section-switch" type="submit" id="section5switch">
+                <p class="schovaný-tag" type="hidden">:="HTML_STS".ZAL_JIDELNA_AUT:</p>
+                <p class="zal_zmena_rezimu">R</p>
+            </button>
+                <form class="autoForm5" style="display: none;">
+                    <input type="hidden" name='"HTML_CO".ZAL_JIDELNA_REZIM' value="1">
+                    <input type="hidden" name='"HTML_CO".ZAL_JIDELNA_Rezerva' value="0">
+                </form>
+                <div class="tlacitka">
+                    <form class="startForm5">
+                        <input type="hidden" name='"HTML_CO".ZAL_JIDELNA_BTN_UP'  value="1">
+                        <button id="upButton5" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_JIDELNA_NAHORU:</p>
+                            <b>&#9650</b></button>
+                    </form>
+                    <form class="stopForm5">
+                        <input type="hidden" name='"HTML_CO".ZAL_JIDELNA_BTN_DOWN'  value="1">
+                        <button id="downButton5" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_JIDELNA_DOLU:</p>
+                            <b>&#9660</b></button>
+                    </form>
+                </div>
+            </div>
+            <div class="section-loznice">
+                <p>Ložnice</p>
+            <button class="section-switch" type="submit" id="section6switch">
+                <p class="schovaný-tag" type="hidden">:="HTML_STS".ZAL_LOZNICE_AUT:</p>
+                <p class="zal_zmena_rezimu">R</p>
+            </button>
+                <form class="autoForm6" style="display: none;">
+                    <input type="hidden" name='"HTML_CO".ZAL_LOZNICE_REZIM' value="1">
+                    <input type="hidden" name='"HTML_CO".ZAL_LOZNICE_Rezerva' value="0">
+                </form>
+                <div class="tlacitka">
+                    <form class="startForm6">
+                        <input type="hidden" name='"HTML_CO".ZAL_LOZNICE_BTN_UP'  value="1">
+                        <button id="upButton6" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_LOZNICE_NAHORU:</p>
+                            <b>&#9650</b></button>
+                    </form>
+                    <form class="stopForm6">
+                        <input type="hidden" name='"HTML_CO".ZAL_LOZNICE_BTN_DOWN'  value="1">
+                        <button id="downButton6" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_LOZNICE_DOLU:</p>
+                            <b>&#9660</b></button>
+                    </form>
+                </div>
+            </div>
+            <div class="section-pokojik">
+                <p>Pokojík</p>
+            <button class="section-switch" type="submit" id="section7switch">
+                <p class="schovaný-tag" type="hidden">:="HTML_STS".ZAL_POKOJ_AUT:</p>
+                <p class="zal_zmena_rezimu">R</p>
+            </button>
+                <form class="autoForm7" style="display: none;">
+                    <input type="hidden" name='"HTML_CO".ZAL_POKOJ_REZIM' value="1">
+                    <input type="hidden" name='"HTML_CO".ZAL_POKOJ_Rezerva' value="0">
+                </form>
+                <div class="tlacitka">
+                    <form class="startForm7">
+                        <input type="hidden" name='"HTML_CO".ZAL_POKOJ_BTN_UP'  value="1">
+                        <button id="upButton7" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_POKOJ_NAHORU:</p>
+                            <b>&#9650</b></button>
+                    </form>
+                    <form class="stopForm7">
+                        <input type="hidden" name='"HTML_CO".ZAL_POKOJ_BTN_DOWN'  value="1">
+                        <button id="downButton7" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_POKOJ_DOLU:</p>
+                            <b>&#9660</b></button>
+                    </form>
+                </div>
+            </div>
+            <div class="section-wellness">
+                <p>Wellnes</p>
+            <button class="section-switch" type="submit" id="section8switch">
+                <p class="schovaný-tag" type="hidden">:="HTML_STS".ZAL_WELLNESS_AUT:</p>
+                <p class="zal_zmena_rezimu">R</p>
+            </button>
+                <form class="autoForm8" style="display: none;">
+                    <input type="hidden" name='"HTML_CO".ZAL_WELLNESS_REZIM' value="1">
+                    <input type="hidden" name='"HTML_CO".ZAL_WELLNESS_Rezerva' value="0">
+                </form>
+                <div class="tlacitka">
+                    <form class="startForm8">
+                        <input type="hidden" name='"HTML_CO".ZAL_WELLNESS_BTN_UP'  value="1">
+                        <button id="upButton8" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_WELLNESS_NAHORU:</p>
+                            <b>&#9650</b></button>
+                    </form>
+                    <form class="stopForm8">
+                        <input type="hidden" name='"HTML_CO".ZAL_WELLNESS_BTN_DOWN'  value="1">
+                        <button id="downButton8" type="submit" class="section-button">
+                            <p class="schovaný-tag">:="HTML_STS".ZAL_WELLNESS_DOLU:</p>
+                            <b>&#9660</b></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <a href="index.html"><button>Zavlažování</button></a>
+            <a href="zaluzie.html"><button class="active">Žaluzie</button></a>
+            <a href="bazen.html"><button>Bazén</button></a>
+        </div>
+        <div class="dokument">
+            <a href="/awp/index/Manual/68011496_S7-1200_1500_Webserver_DOC_v22_en.pdf"><button>Dokumentace</button></a>
+        </div>
+    </div>
+</body>
+</html>

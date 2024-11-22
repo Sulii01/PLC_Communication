@@ -1,0 +1,243 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 390px;
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.input-submit, .input-select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 100px;
+    text-align: left;
+}
+
+.schovaný-tag{
+    display: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.button-group {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+
+.zap, .vyp{
+    padding: 10px 10px;
+    font-size: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 100px;
+    transition: ease-in 0.3s;
+}
+
+.tlacitka {
+    display: flex;
+}
+
+
+.section-filtrace, .section-solinator, .section-tc, .section-svetlo, .section-teplota{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 30px;
+    margin-right: 5px;
+}
+
+.section-svetlo{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.svetlo-indicator, .tc_indicator, .sol_indicator, .fil_indicator{
+    margin-right: 25px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+.svetlo-indicator p, .tc_indicator p, .sol_indicator p, .fil_indicator p{
+    display: none;
+}
+
+.svetlo-p{
+    margin-right: 25px;
+}
+
+.section-teplota{
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.parametr-teplo{
+    margin-left: 35px;
+}
+
+.section-switch {
+    display: flex;
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: auto;
+    transition: ease-in 0.2s;
+    align-items: center;
+}
+
+.section-switch p{
+    font-size: 15px;
+    padding: 0px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.zap, .vyp {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: auto;
+    transition: ease-in 0.2s;
+}
+
+.zap:hover, .vyp:hover {
+    background-color: #0056b3;
+}
+
+.svetlo_zap, .svetlo_vyp{
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: auto;
+    transition: ease-in 0.2s;
+}
+
+.svetlo_zap:hover, .svetlo_vyp:hover{
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+.section-indicator p, .status-indicator p {
+    display: none;
+}
+
+.nav button{
+    padding: 10px 5px;
+    font-size: 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 100px;
+    transition: ease-in 0.3s;
+}
+
+.nav button:hover {
+    background-color: green;
+}
+
+.nav button.active {
+    background-color: rgb(4, 202, 4);
+}
+
+/*__Stylování Tlačítek dokumentace__*/
+.dokument button{
+    padding: 5px 5px;
+    font-size: 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 100px;
+    transition: ease-in 0.3s;
+}
+
+button b{
+    font-size: 15px;
+}
+
+.dokument button:hover {
+    background-color: green;
+}

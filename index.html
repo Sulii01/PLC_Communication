@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- AWP_In_Variable Name='"HTML_CO".ZAVL_SEKCE_1_ZAP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAVL_SEKCE_1_VYP' -->
+<!-- AWP_In_Variable Name='"HTML_STS".ZAVL_SEKCE1_INDICATOR' -->
+<!-- AWP_In_Variable Name='"HTML_STS".ZAVL_SEKCE2_INDICATOR' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAVL_SEKCE_2_ZAP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAVL_SEKCE_2_VYP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAVL_MANUAL' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAVL_AUTOMAT' -->
+<!-- AWP_In_Variable Name='"HTML_STS".ZAVL_AUTO_INDICATOR' -->
+<!-- AWP_In_Variable Name='"HTML_STS".ZAVL_MANUAL_INDICATOR' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAVL_SPOLECNE_ZAP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".ZAVL_SPOLECNE_VYP' -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zavlažování</title>
+    <link href="command.htm">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Zavlažování</h1>
+        <div class="button-group">
+            <div class="start-stop">
+                <form class="autoForm">
+                    <input type="hidden" name='"HTML_CO".ZAVL_MANUAL' value="0">
+                    <input type="hidden" name='"HTML_CO".ZAVL_AUTOMAT' value="1">
+                    <button id="autoButton" type="submit" class="section-button">Atomaticky</button>
+                </form>
+                <div class="status-indicator" id="autoIndicator"><p>:="HTML_STS".ZAVL_AUTO_INDICATOR:</p></div>
+            </div>
+        </div>
+        <form id="myForm" class="hidden">
+            <div class="form-group">
+                <div class="input-select">
+                    <label for="daySelect">Vyberte den:</label>
+                    <select id="daySelect" name="daySelect">
+                        <option value="1">Pondělí</option>
+                        <option value="2">Úterý</option>
+                        <option value="3">Středa</option>
+                        <option value="4">Čtvrtek</option>
+                        <option value="5">Pátek</option>
+                        <option value="6">Sobota</option>
+                        <option value="7">Neděle</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <div class="button-group">
+            <div class="start-stop">
+                <form class="manualForm">
+                    <input type="hidden" name='"HTML_CO".ZAVL_MANUAL' value="1">
+                    <input type="hidden" name='"HTML_CO".ZAVL_AUTOMAT' value="0">
+                    <button id="manualButton" type="submit" class="section-button">Manuálně</button>
+                </form>
+                <div class="status-indicator" id="manualIndicator"><p>:="HTML_STS".ZAVL_MANUAL_INDICATOR:</p></div>
+            </div>
+        </div>
+        <div class="zap_a_vyp_sekcí">
+            <div class="spolecne" id="SpolZapVyp">
+                <p>Společně:</p>
+                <div class="spolecne-start-stop">
+                    <form class="spolecneStart">
+                        <input type="hidden" name='"HTML_CO".ZAVL_SPOLECNE_ZAP' value="1">
+                        <input type="hidden" name='"HTML_CO".ZAVL_SPOLECNE_VYP' value="0">
+                        <button id="startButton3" type="submit" class="section-button">Zap</button>
+                    </form>
+                    <form class="spolecneStop">
+                        <input type="hidden" name='"HTML_CO".ZAVL_SPOLECNE_ZAP' value="0">
+                        <input type="hidden" name='"HTML_CO".ZAVL_SPOLECNE_VYP' value="1">
+                        <button id="stopButton3" type="submit" class="section-button">Vyp</button>
+                    </form>
+                </div>
+                <div class="section-indicator" id="SpolIndicator"><p>:="HTML_STS".ZAVL_SPOLECNE_INDICATOR:</p></div>
+            </div>
+            <div class="section">
+                <p>Zavlažování 1:</p>
+                <div class="tlacitka tlacitka1">
+                    <form class="startForm1">
+                        <input type="hidden" name='"HTML_CO".ZAVL_SEKCE_1_ZAP' value="1">
+                        <input type="hidden" name='"HTML_CO".ZAVL_SEKCE_1_VYP' value="0">
+                        <button id="startButton1" type="submit" class="section-button">Zap</button>
+                    </form>
+                    <form class="stopForm1">
+                        <input type="hidden" name='"HTML_CO".ZAVL_SEKCE_1_ZAP' value="0">
+                        <input type="hidden" name='"HTML_CO".ZAVL_SEKCE_1_VYP' value="1">
+                        <button id="stopButton1" type="submit" class="section-button">Vyp</button>
+                    </form>
+                </div>
+                <div class="section-indicator" id="section1Indicator"><p>:="HTML_STS".ZAVL_SEKCE1_INDICATOR:</p></div>
+            </div>
+            <div class="section">
+                <p>Zavlažování 2:</p>
+                <div class="tlacitka tlacitka2">
+                    <form class="startForm2">
+                        <input type="hidden" name='"HTML_CO".ZAVL_SEKCE_2_ZAP' value="1">
+                        <input type="hidden" name='"HTML_CO".ZAVL_SEKCE_2_VYP' value="0">
+                        <button id="startButton2" type="submit" class="section-button">Zap</button>
+                    </form>
+                    <form class="stopForm2">
+                        <input type="hidden" name='"HTML_CO".ZAVL_SEKCE_2_ZAP' value="0">
+                        <input type="hidden" name='"HTML_CO".ZAVL_SEKCE_2_VYP' value="1">
+                        <button id="stopButton2" type="submit" class="section-button">Vyp</button>
+                    </form>
+                </div>
+                <div class="section-indicator" id="section2Indicator"><p>:="HTML_STS".ZAVL_SEKCE2_INDICATOR:</p></div>
+            </div>
+        </div>
+        <div class="nav">
+            <a href="index.html"><button class="active">Zavlažování</button></a>
+            <a href="zaluzie.html"><button>Žaluzie</button></a>
+            <a href="bazen.html"><button>Bazén</button></a>
+        </div>
+        <div class="dokument">
+            <a href="/awp/index/Manual/68011496_S7-1200_1500_Webserver_DOC_v22_en.pdf"><button>Dokumentace</button></a>
+        </div>        
+    </div>
+</body>
+</html>

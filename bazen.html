@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- AWP_In_Variable Name='"HTML_CO".BAZ_FILTRACE_ZAP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".BAZ_FILTRACE_VYP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".BAZ_FILTRACE_AUTO' -->
+<!-- AWP_In_Variable Name='"HTML_CO".BAZ_REZERVA' -->
+<!-- AWP_In_Variable Name='"HTML_CO".BAZ_SOLINATOR_ZAP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".BAZ_SOLINATOR_VYP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".BAZ_SOLINATOR_AUTO' -->
+<!-- AWP_In_Variable Name='"HTML_CO".BAZ_REZERVA' -->
+<!-- AWP_In_Variable Name='"HTML_CO".BAZ_TC_ZAP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".BAZ_TC_VYP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".BAZ_TC_AUTO' -->
+<!-- AWP_In_Variable Name='"HTML_CO".BAZ_REZERVA' -->
+<!-- AWP_In_Variable Name='"HTML_CO".BAZ_SVETLO_ZAP' -->
+<!-- AWP_In_Variable Name='"HTML_CO".BAZ_SVETLO_VYP' -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazén</title>
+    <link rel="stylesheet" href="bazen.css">
+    <script src="bazen.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Bazén</h1>
+        <div class="hodnoty">
+            <div class="section-filtrace">
+                <p>Filtrace</p>
+                    <button class="section-switch" type="submit" id="section1switch">
+                        <p class="schovaný-tag" type="hidden">:="HTML_STS".BAZ_FILTRACE_REZIM:</p>
+                        <p class="baz_zmena_rezimu">R</p>
+                    </button>
+                        <form class="autoForm1" style="display: none;">
+                            <input type="hidden" name='"HTML_CO".BAZ_FILTRACE_AUTO' value="1">
+                            <input type="hidden" name='"HTML_CO".BAZ_REZERVA' value="0">
+                        </form>
+                <div class="tlacitka">
+                    <form class="startForm1">
+                        <input type="hidden" name='"HTML_CO".BAZ_FILTRACE_ZAP' value="1">
+                        <input type="hidden" name='"HTML_CO".BAZ_FILTRACE_VYP' value="0">
+                        <button id="startButton1" type="submit" class="zap">Zap</button>
+                    </form>
+                    <form class="stopForm1">
+                        <input type="hidden" name='"HTML_CO".BAZ_FILTRACE_ZAP' value="0">
+                        <input type="hidden" name='"HTML_CO".BAZ_FILTRACE_VYP' value="1">
+                        <button id="stopButton1" type="submit" class="vyp">Vyp</button>
+                    </form>
+                </div>
+                <div class="fil_indicator" name='"HTML_CO".BAZ_FILTRACE_INDICATOR'><p>:="HTML_STS".BAZ_FILTRACE_INDICATOR:</p></div>
+            </div>
+            <div class="section-solinator">
+                <p>Solinátor</p>
+            <button class="section-switch" type="submit" id="section2switch">
+                <p class="schovaný-tag" type="hidden">:="HTML_STS".BAZ_SOLINATOR_REZIM:</p>
+                <p class="baz_zmena_rezimu">R</p>
+            </button>
+                <form class="autoForm2" style="display: none;">
+                    <input type="hidden" name='"HTML_CO".BAZ_SOLINATOR_AUTO' value="1">
+                    <input type="hidden" name='"HTML_CO".BAZ_REZERVA' value="0">
+                </form>
+                <div class="tlacitka">
+                    <form class="startForm2">
+                        <input type="hidden" name='"HTML_CO".BAZ_SOLINATOR_ZAP' value="1">
+                        <input type="hidden" name='"HTML_CO".BAZ_SOLINATOR_VYP' value="0">
+                        <button id="startButton2" type="submit" class="zap">Zap</button>
+                    </form>
+                    <form class="stopForm1">
+                        <input type="hidden" name='"HTML_CO".BAZ_SOLINATOR_ZAP' value="0">
+                        <input type="hidden" name='"HTML_CO".BAZ_SOLINATOR_VYP' value="1">
+                        <button id="stopButton1" type="submit" class="vyp">Vyp</button>
+                    </form>
+                </div>
+                <div class="sol_indicator" name='"HTML_CO".BAZ_SOL_INDICATOR'><p>:="HTML_STS".BAZ_TC_INDICATOR:</p></div>
+            </div>
+            <div class="section-tc">
+                <p>TČ</p>
+            <button class="section-switch" type="submit" id="section3switch">
+                <p class="schovaný-tag" type="hidden">:="HTML_STS".BAZ_TC_REZIM:</p>
+                <p class="baz_zmena_rezimu">R</p>
+            </button>
+                <form class="autoForm3" style="display: none;">
+                    <input type="hidden" name='"HTML_CO".BAZ_TC_AUTO' value="1">
+                    <input type="hidden" name='"HTML_CO".BAZ_REZERVA' value="0">
+                </form>
+                <div class="tlacitka">
+                    <form class="startForm3">
+                        <input type="hidden" name='"HTML_CO".BAZ_TC_ZAP' value="1">
+                        <input type="hidden" name='"HTML_CO".BAZ_TC_VYP' value="0">
+                        <button id="startButton3" type="submit" class="zap">Zap</button>
+                    </form>
+                    <form class="stopForm3">
+                        <input type="hidden" name='"HTML_CO".BAZ_TC_ZAP' value="0">
+                        <input type="hidden" name='"HTML_CO".BAZ_TC_VYP' value="1">
+                        <button id="stopButton3" type="submit" class="vyp">Vyp</button>
+                    </form>
+                </div>
+                <div class="tc_indicator" name='"HTML_CO".BAZ_TC_INDICATOR'><p>:="HTML_STS".BAZ_TC_INDICATOR:</p></div>
+            </div>
+            <div class="section-svetlo">
+                <p class="svetlo-p">Světlo</p>
+                <div class="tlacitka">
+                        <form class="startForm4">
+                            <input type="hidden" name='"HTML_CO".BAZ_SVETLO_ZAP' value="1">
+                            <input type="hidden" name='"HTML_CO".BAZ_SVETLO_VYP' value="0">
+                            <button id="startButton4" type="submit" class="svetlo_zap">Zap</button>
+                        </form>
+                        <form class="stopForm4">
+                            <input type="hidden" name='"HTML_CO".BAZ_SVETLO_ZAP' value="0">
+                            <input type="hidden" name='"HTML_CO".BAZ_SVETLO_VYP' value="1">
+                            <button id="stopButton4" type="submit" class="svetlo_vyp">Vyp</button>
+                        </form>
+                </div>
+                <div class="svetlo-indicator" name='"HTML_CO".BAZ_SVETLO_INDICATOR'><p>:="HTML_STS".BAZ_SVETLO_INDICATOR:</p></div>
+            </div>
+            <div class="section-teplota">
+                <p class="teplota-p">Teplota</p>
+                <div class="tlacitka">
+                    <div class="parametr-teplo" name='"HTML_CO".BAZ_TEPLOTA'>:="HTML_STS".BAZ_TEPLOTA:</div>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <a href="index.html"><button>Zavlažování</button></a>
+            <a href="zaluzie.html"><button>Žaluzie</button></a>
+            <a href="bazen.html"><button class="active">Bazén</button></a>
+        </div>
+        <div class="dokument">
+            <a href="/awp/index/Manual/68011496_S7-1200_1500_Webserver_DOC_v22_en.pdf"><button>Dokumentace</button></a>
+        </div>        
+    </div>
+</body>
+</html>

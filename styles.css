@@ -1,0 +1,206 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 345px;
+    max-width: 500px;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.input-submit, .input-select {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 100px;
+    text-align: left;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.button-group {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+
+.start-stop .section-button, .start-stop .section-button{
+    padding: 10px 10px;
+    font-size: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 100px;
+    transition: ease-in 0.3s;
+}
+
+.start-stop {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.tlacitka, .spolecne-start-stop{
+    display: flex;
+}
+
+.spolecne-start-stop{
+    margin-left: 30px;
+}
+
+.status-indicator {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 15px;
+    background-color: #808080;
+}
+
+.section, .spolecne{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.section-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+.section-button {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: auto;
+    transition: ease-in 0.2s;
+}
+
+.section-button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+.section-indicator p, .status-indicator p {
+    display: none;
+}
+
+/*Stylování navigačních tlačítek*/
+.nav button{
+    padding: 10px 5px;
+    font-size: 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 100px;
+    transition: ease-in 0.3s;
+}
+
+.spolecne-start-stop button{
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: auto;
+    transition: ease-in 0.2s;
+}
+
+.nav button:hover {
+    background-color: green;
+}
+
+.nav button.active {
+    background-color: rgb(4, 202, 4);
+}
+
+/*__Stylování Tlačítek dokumentace__*/
+
+.dokument button{
+    padding: 5px 5px;
+    font-size: 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    width: 100px;
+    transition: ease-in 0.3s;
+}
+
+button b{
+    font-size: 15px;
+}
+
+.dokument button:hover {
+    background-color: green;
+}
